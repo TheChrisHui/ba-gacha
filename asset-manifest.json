@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ba-gacha/static/css/main.0e53cee2.css",
+    "main.js": "/ba-gacha/static/js/main.086857a0.js",
+    "static/js/453.bce03b1a.chunk.js": "/ba-gacha/static/js/453.bce03b1a.chunk.js",
+    "static/media/baMenuAnimation2.mp4": "/ba-gacha/static/media/baMenuAnimation2.449bd1cd927d2a220531.mp4",
+    "static/media/tenPull.webp": "/ba-gacha/static/media/tenPull.fcb95c71a883ab07864e.webp",
+    "static/media/onePull.webp": "/ba-gacha/static/media/onePull.11e00230fe0589ab1662.webp",
+    "index.html": "/ba-gacha/index.html",
+    "main.0e53cee2.css.map": "/ba-gacha/static/css/main.0e53cee2.css.map",
+    "main.086857a0.js.map": "/ba-gacha/static/js/main.086857a0.js.map",
+    "453.bce03b1a.chunk.js.map": "/ba-gacha/static/js/453.bce03b1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e53cee2.css",
+    "static/js/main.086857a0.js"
+  ]
+}
