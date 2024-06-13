@@ -27,3 +27,21 @@ code {
 .baBackgroundColor {
   background: rgb(181, 229, 245)
 }
+
+.characterAnimation {
+  animation-name: characterAnimation1, characterAnimation2;
+  animation-duration: 0.7s;
+  animation-delay: 0s, 0.7s;
+  animation-timing-function: ease-in, ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes characterAnimation1 {
+  0%   {left:0vw; top:25vh; height:100vh}
+  100% {left:10vw; top:25vh; height:100vh}
+}
+
+@keyframes characterAnimation2 {
+  0%   {left:10vw; top:0px; height:150vh}
+  100% {left:25vw; top:0px; height:150vh}
+}
