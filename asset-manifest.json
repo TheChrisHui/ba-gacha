@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/ba-gacha/static/css/main.83820f8d.css",
-    "main.js": "/ba-gacha/static/js/main.6692c660.js",
+    "main.css": "/ba-gacha/static/css/main.c799de27.css",
+    "main.js": "/ba-gacha/static/js/main.1c029747.js",
     "static/js/453.96822519.chunk.js": "/ba-gacha/static/js/453.96822519.chunk.js",
-    "static/media/baMenuAnimation2.mp4": "/ba-gacha/static/media/baMenuAnimation2.449bd1cd927d2a220531.mp4",
+    "static/media/baMenuAnimation.mp4": "/ba-gacha/static/media/baMenuAnimation.449bd1cd927d2a220531.mp4",
     "static/media/connectedSky.mp3": "/ba-gacha/static/media/connectedSky.b28ad2e9bab75c447b50.mp3",
     "static/media/blueOne.mp4": "/ba-gacha/static/media/blueOne.2b7d5f24ed352b0f0736.mp4",
     "static/media/Wakamo_Swimsuit_full.png": "/ba-gacha/static/media/Wakamo_Swimsuit_full.ff8c83ed6065de3cdaab.png",
@@ -131,6 +131,7 @@
     "static/media/Misaka_Mikoto_full.png": "/ba-gacha/static/media/Misaka_Mikoto_full.4fa8fce355e04d3cd524.png",
     "static/media/Ako_Dress_full.png": "/ba-gacha/static/media/Ako_Dress_full.2d87653ec8540173c416.png",
     "static/media/Haruka_full.png": "/ba-gacha/static/media/Haruka_full.cfa2ca04c194cce387c8.png",
+    "static/media/aronaInPyroxene.webp": "/ba-gacha/static/media/aronaInPyroxene.e2899605f623f54d7d0a.webp",
     "static/media/Ayane_full.png": "/ba-gacha/static/media/Ayane_full.6c73912a6280c71f2747.png",
     "static/media/Hasumi_full.png": "/ba-gacha/static/media/Hasumi_full.f6d7d80971dda4856b7b.png",
     "static/media/Mashiro_full.png": "/ba-gacha/static/media/Mashiro_full.4805cbb553ef7d5ad61f.png",
@@ -172,8 +173,11 @@
     "static/media/Serika_full.png": "/ba-gacha/static/media/Serika_full.8a0ba49aabfae7f01716.png",
     "static/media/Hifumi_full.png": "/ba-gacha/static/media/Hifumi_full.1864f5e56da7dcccb742.png",
     "static/media/Serina_full.png": "/ba-gacha/static/media/Serina_full.5ca71752f883cd509b16.png",
-    "static/media/tenPull.webp": "/ba-gacha/static/media/tenPull.fcb95c71a883ab07864e.webp",
-    "static/media/onePull.webp": "/ba-gacha/static/media/onePull.11e00230fe0589ab1662.webp",
+    "static/media/baPullTen.png": "/ba-gacha/static/media/baPullTen.5690a8e84b28c43b980e.png",
+    "static/media/baPullOne.png": "/ba-gacha/static/media/baPullOne.68050d7b7ad995bc79d9.png",
+    "static/media/aronaPullingPyroxene.png": "/ba-gacha/static/media/aronaPullingPyroxene.9cbd436efb46f597dbef.png",
+    "static/media/aronaPackingPyroxene.png": "/ba-gacha/static/media/aronaPackingPyroxene.85b8770e2592166f4838.png",
+    "static/media/pyroxene.png": "/ba-gacha/static/media/pyroxene.b2e0c5edcdfa1252f79d.png",
     "static/media/Izumi_Icon.png": "/ba-gacha/static/media/Izumi_Icon.d4779b65a168b8e04c28.png",
     "static/media/Shimiko_Icon.png": "/ba-gacha/static/media/Shimiko_Icon.a50087bfffdbd9597f50.png",
     "static/media/Iori_Icon.png": "/ba-gacha/static/media/Iori_Icon.1e3d2af524755f71f257.png",
@@ -341,12 +345,12 @@
     "static/media/Marina_Icon.png": "/ba-gacha/static/media/Marina_Icon.3896b620c8d7b515628f.png",
     "static/media/Kikyou_Icon.png": "/ba-gacha/static/media/Kikyou_Icon.e3389a86eca0504ddb2a.png",
     "index.html": "/ba-gacha/index.html",
-    "main.83820f8d.css.map": "/ba-gacha/static/css/main.83820f8d.css.map",
-    "main.6692c660.js.map": "/ba-gacha/static/js/main.6692c660.js.map",
+    "main.c799de27.css.map": "/ba-gacha/static/css/main.c799de27.css.map",
+    "main.1c029747.js.map": "/ba-gacha/static/js/main.1c029747.js.map",
     "453.96822519.chunk.js.map": "/ba-gacha/static/js/453.96822519.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83820f8d.css",
-    "static/js/main.6692c660.js"
+    "static/css/main.c799de27.css",
+    "static/js/main.1c029747.js"
   ]
 }
