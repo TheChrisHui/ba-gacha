@@ -1,24 +1,27 @@
 import CanvasDraw from "./canvasDraw.js"
-import Pull from "./pull.js"
+import PullOne from "./pullOne.js"
+import PullTen from "./pullTen.js"
 import CharacterAnimation from "./characterAnimation.js";
 import blueOne from "../../media/blueOne.mp4"
 import { useState, useEffect } from "react";
 import {characters} from "../../utilities/characters.js"
 
-function Gacha({pull, onClick}) {
+function Gacha({pull, onClick, setPyroxene}) {
 
     
     const [pullList, setPullList] = useState([]);
 
-    useEffect(() => {
-    const generatedPullList = [];
-    for (let i = 0; i < pull; i++) {
-        generatedPullList.push(
-        characters[Math.floor(Math.random() * (characters.length - 1))]
-        );
-    }
-    setPullList(generatedPullList);
-    }, [pull]);
+    function generatePullList(pull) {
+        const generatedPullList = [];
+        for (let i = 0; i < pull; i++) {
+            generatedPullList.push(
+                characters[Math.floor(Math.random() * (characters.length - 1))]
+            );
+        }
+        setPullList(generatedPullList);
+    };
+
+    useEffect(() => generatePullList(pull), [pull]);
 
     const [progress, setProgress] = useState(0);
 
@@ -40,19 +43,23 @@ function Gacha({pull, onClick}) {
      */
 
     return(
-        <div className="relative">
+        <div className="relative h-screen w-screen">
             {(progress===1 || progress===0) ? 
-                <video className="absolute h-screen w-auto" autoPlay muted onEnded={handleVideoEnd}>
+                <video className="absolute h-full w-auto" autoPlay muted playsInline onEnded={handleVideoEnd}>
                     <source src={blueOne}/>
                 </video> : <></>
             }
             
-            <div className="absolute h-screen w-screen">
+            <div className="absolute h-full w-full">
                 {(progress===1) && (<CanvasDraw setProgress={setProgress}/>)}
 
-                {(progress===2) && (<CharacterAnimation pullList={pullList} setProgress={setProgress}/>)}
+                {(progress===2) && (<>  <CharacterAnimation pullList={pullList} setProgress={setProgress}/> 
+                                        <div className="-z-10 absolute top-0 left-0 h-full w-full bg-white opacity-0 fadeOutAnimation"></div></>)}
                 
-                {(progress===3) && (<Pull pullList={pullList} onClick={onClick}/>)}
+                {(progress===3) && (pull===1 ? 
+                    <PullOne setProgress={setProgress} generatePullList={generatePullList} pullList={pullList} onClick={onClick} setPyroxene={setPyroxene}/> : 
+                    <PullTen setProgress={setProgress} generatePullList={generatePullList} pullList={pullList} onClick={onClick} setPyroxene={setPyroxene}/>
+                )}
 
             </div>
         </div>

@@ -9,6 +9,7 @@ function CanvasDraw({setProgress}) {
      */
     const [lines, setLines] = useState([]);
     const [isDrawing, setIsDrawing] = useState(false);
+    const [fadeWhite, setFadeWhite] = useState(false);
 
     const [timer, setTimer] = useState(2);
 
@@ -16,7 +17,8 @@ function CanvasDraw({setProgress}) {
 
     useEffect(()=>{
         if (timer===0) {
-            setProgress(2);
+            setFadeWhite(true);
+            setTimeout(() => setProgress(2),800);
         }
     }, [timer, setProgress]);
     
@@ -36,9 +38,11 @@ function CanvasDraw({setProgress}) {
     }
 
     function handleMouseDown(e) {
-        clearInterval(intervalIdRef.current);
-        setIsDrawing(true);
-        setLines([...lines, [e.currentTarget.getStage().getPointerPosition().x, e.currentTarget.getStage().getPointerPosition().y]]);
+        if (timer !== 0) {
+            clearInterval(intervalIdRef.current);
+            setIsDrawing(true);
+            setLines([...lines, [e.currentTarget.getStage().getPointerPosition().x, e.currentTarget.getStage().getPointerPosition().y]]);
+        }
     }
 
     function handleMouseUp() {
@@ -86,6 +90,7 @@ function CanvasDraw({setProgress}) {
                     </Layer>
                 </Stage>
             </div>
+            {fadeWhite && <div className="-z-10 absolute top-0 left-0 h-full w-full bg-white opacity-0 fadeInAnimation"></div>}
         </div>
     );
 }

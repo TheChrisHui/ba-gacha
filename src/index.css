@@ -45,3 +45,42 @@ code {
   0%   {left:10vw; top:0px; height:150vh}
   100% {left:25vw; top:0px; height:150vh}
 }
+
+.fadeOutAnimation {
+  animation-name:fadeOut;
+  animation-duration: 0.5s;
+}
+
+.fadeInAnimation {
+  animation-name:fadeIn;
+  animation-duration: 0.8s;
+}
+
+@keyframes fadeIn {
+  0% {z-index: 10; opacity: 0}
+  60% {z-index: 10; opacity: 1}
+  100% {z-index: 10; opacity: 1}
+}
+
+@keyframes fadeOut {
+  0% {z-index: 10; opacity: 1}
+  100% {z-index: 10; opacity: 0}
+}
+
+.popupBackground {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  backdrop-filter: brightness(50%);
+  justify-content: center;
+  z-index: 30;
+}
+
+.popupContent {
+  position: relative;
+  width: 40%;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
