@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/ba-gacha/static/css/main.c799de27.css",
-    "main.js": "/ba-gacha/static/js/main.1c029747.js",
+    "main.css": "/ba-gacha/static/css/main.7726dc15.css",
+    "main.js": "/ba-gacha/static/js/main.a03a1f7f.js",
     "static/js/453.96822519.chunk.js": "/ba-gacha/static/js/453.96822519.chunk.js",
-    "static/media/baMenuAnimation.mp4": "/ba-gacha/static/media/baMenuAnimation.449bd1cd927d2a220531.mp4",
+    "static/media/baMenuAnimation.mp4": "/ba-gacha/static/media/baMenuAnimation.00d11df06d357402c0a6.mp4",
     "static/media/connectedSky.mp3": "/ba-gacha/static/media/connectedSky.b28ad2e9bab75c447b50.mp3",
     "static/media/blueOne.mp4": "/ba-gacha/static/media/blueOne.2b7d5f24ed352b0f0736.mp4",
     "static/media/Wakamo_Swimsuit_full.png": "/ba-gacha/static/media/Wakamo_Swimsuit_full.ff8c83ed6065de3cdaab.png",
@@ -345,12 +345,12 @@
     "static/media/Marina_Icon.png": "/ba-gacha/static/media/Marina_Icon.3896b620c8d7b515628f.png",
     "static/media/Kikyou_Icon.png": "/ba-gacha/static/media/Kikyou_Icon.e3389a86eca0504ddb2a.png",
     "index.html": "/ba-gacha/index.html",
-    "main.c799de27.css.map": "/ba-gacha/static/css/main.c799de27.css.map",
-    "main.1c029747.js.map": "/ba-gacha/static/js/main.1c029747.js.map",
+    "main.7726dc15.css.map": "/ba-gacha/static/css/main.7726dc15.css.map",
+    "main.a03a1f7f.js.map": "/ba-gacha/static/js/main.a03a1f7f.js.map",
     "453.96822519.chunk.js.map": "/ba-gacha/static/js/453.96822519.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c799de27.css",
-    "static/js/main.1c029747.js"
+    "static/css/main.7726dc15.css",
+    "static/js/main.a03a1f7f.js"
   ]
 }
