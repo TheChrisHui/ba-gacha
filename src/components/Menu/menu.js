@@ -3,7 +3,7 @@ import Recruitment from "./recruitment.js"
 
 function Menu({onClick, pyroxene, setPyroxene}) {
     return(
-        <div className="relative">
+        <div>
             <Navbar pyroxene={pyroxene} setPyroxene={setPyroxene}/>
             <Recruitment onClick={onClick}/>
         </div>

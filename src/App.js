@@ -8,8 +8,6 @@ function App() {
   const [pull, setPull] = useState(0);
   const [pyroxene, setPyroxene] = useState(12000);
 
-  console.log(gacha);
-
   function handleClick(pullNumber) {
     setPull(pullNumber);
     setGacha(!gacha);

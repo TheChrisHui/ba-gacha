@@ -8,7 +8,7 @@ function PullTen({setProgress, generatePullList, pullList, onClick, setPyroxene}
     return(
         <div>
             <div className="absolute bg-baDarkBlue h-full w-full">
-                <div className="grid grid-rows-2 grid-cols-5 h-fit mx-[20%] mt-[5%] gap-x-[3%] gap-y-[30%]">
+                <div className="grid grid-rows-2 grid-cols-5 h-fit mx-[20%] portrait:mx-[10%] mt-[5%] gap-x-[3%] gap-y-[30%]">
                     {pullList.map((characterName, i)=>{
                         return(
                             <div key={i}>
@@ -28,7 +28,7 @@ function PullTen({setProgress, generatePullList, pullList, onClick, setPyroxene}
             </div>
 
             {popup && <div className="popupBackground">
-                <div className="popupContent h-[65%] mt-[6%]">
+                <div className="popupContent w-[40%] h-[65%]">
                     <div className="py-[10px] flex justify-center bg-baDarkBlue text-4xl font-bold baFontColor drop-shadow-md items-center">
                         <div>
                             Notice

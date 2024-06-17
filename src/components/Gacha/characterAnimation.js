@@ -28,7 +28,7 @@ function CharacterAnimation({pullList, setProgress}) {
                 </button>
             </div>
             <div ref={animationRef} className="fixed w-auto inline-block characterAnimation">
-                <img className="h-full w-auto" src={require(`../../media/baPortraits/${pullList[characterId]}_full.png`)} alt="characterFull"/>
+                <img className="object-fit h-full w-full" src={require(`../../media/baPortraits/${pullList[characterId]}_full.png`)} alt="characterFull"/>
             </div>
         </div>
     );

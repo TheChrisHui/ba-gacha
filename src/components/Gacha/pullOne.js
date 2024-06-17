@@ -22,7 +22,7 @@ function PullOne({setProgress, generatePullList, pullList, onClick, setPyroxene}
             </div>
 
             {popup && <div className="popupBackground">
-                <div className="popupContent h-[65%] mt-[6%]">
+                <div className="popupContent w-[40%] h-[65%]">
                     <div className="py-[10px] flex justify-center bg-baDarkBlue text-4xl font-bold baFontColor drop-shadow-md items-center">
                         <div>
                             Notice

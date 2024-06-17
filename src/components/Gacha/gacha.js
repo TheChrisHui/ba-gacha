@@ -43,14 +43,18 @@ function Gacha({pull, onClick, setPyroxene}) {
      */
 
     return(
-        <div className="relative h-screen w-screen">
-            {(progress===1 || progress===0) ? 
-                <video className="absolute h-full w-auto" autoPlay muted playsInline onEnded={handleVideoEnd}>
-                    <source src={blueOne}/>
-                </video> : <></>
+        <div className="relative h-screen w-screen overflow-x-hidden" 
+            onTouchStart={(e)=>e.preventDefault()}
+            onTouchMove={(e)=>e.preventDefault()}>
+            {(progress===1 || progress===0) &&
+                <div className="absolute inset-0 bg-baDarkBlue">
+                    <video className="object-cover h-full w-full portrait:absolute portrait:top-[25%] portrait:h-[50%]" autoPlay muted playsInline onEnded={handleVideoEnd}>
+                        <source src={blueOne}/>
+                    </video>
+                </div>
             }
             
-            <div className="absolute h-full w-full">
+            <div className="absolute inset-0">
                 {(progress===1) && (<CanvasDraw setProgress={setProgress}/>)}
 
                 {(progress===2) && (<>  <CharacterAnimation pullList={pullList} setProgress={setProgress}/> 
