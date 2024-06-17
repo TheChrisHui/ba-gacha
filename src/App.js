@@ -18,14 +18,14 @@ function App() {
 
   useEffect(()=>{
     if (audioRef.current) {
-      audioRef.current.volume = 0.5;
+      audioRef.current.volume = 0.3;
     }
   });
 
   return (
     <div>
-      {gacha ? <Gacha pull={pull} onClick={handleClick} setPyroxene={setPyroxene}/> : <Menu onClick={handleClick} pyroxene={pyroxene} setPyroxene={setPyroxene}/>}
-      <audio ref={audioRef} loop autoPlay>
+      {gacha ? <Gacha pull={pull} onClick={handleClick} setPyroxene={setPyroxene}/> : <Menu onClick={handleClick} pyroxene={pyroxene} setPyroxene={setPyroxene} audioRef={audioRef}/>}
+      <audio ref={audioRef} loop>
         <source src={connectedSky} type="audio/mpeg"/>
       </audio>
     </div>

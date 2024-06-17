@@ -19,6 +19,9 @@ function RecruitmentMenu({setPopup}) {
                             <div className="text-[10px] lg:text-base text-gray-600">
                                 ※ Pyroxenes can be purchased for free!
                             </div>
+                            <div className="text-[10px] lg:text-base text-gray-600">
+                                ※ Turn on the background music!
+                            </div>
                         </div>
                         <div className="absolute bottom-0 flex flex-row justify-center w-full px-[20px] pb-[20px]">
                             <button onClick={() => setPopup(1)}>

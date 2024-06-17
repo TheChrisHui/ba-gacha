@@ -1,11 +1,11 @@
 import Navbar from "./navbar.js"
 import Recruitment from "./recruitment.js"
 
-function Menu({onClick, pyroxene, setPyroxene}) {
+function Menu({onClick, pyroxene, setPyroxene, audioRef}) {
     return(
         <div>
             <Navbar pyroxene={pyroxene} setPyroxene={setPyroxene}/>
-            <Recruitment onClick={onClick}/>
+            <Recruitment onClick={onClick} audioRef={audioRef}/>
         </div>
     );
 }
