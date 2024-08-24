@@ -12,18 +12,18 @@ function PullOne({setProgress, generatePullList, pullList, onClick, setPyroxene}
                     {(pullList.length !== 0) && <img className="mx-auto mt-[13%] w-[10%] h-auto" src={require(`../../media/baIcons/${pullList[0]}_Icon.png`)} alt="characterIcon"/>}
                 </div>
                 <div className="absolute bottom-[17%] h-[10%] flex justify-center w-full gap-[5%]">
-                    <button className="border border-black h-full w-[15%]" onClick={() => onClick(0)}>
+                    <button className="border border-black h-full w-[30%] lg:w-[15%]" onClick={() => onClick(0)}>
                         OK
                     </button>
-                    <button className="border border-black h-full w-[15%]" onClick={() => setPopup(true)}>
+                    <button className="border border-black h-full w-[30%] lg:w-[15%]" onClick={() => setPopup(true)}>
                         Continue
                     </button>
                 </div>
             </div>
 
             {popup && <div className="popupBackground">
-                <div className="popupContent w-[40%] h-[65%]">
-                    <div className="py-[10px] flex justify-center bg-baDarkBlue text-4xl font-bold baFontColor drop-shadow-md items-center">
+                <div className="popupContent w-[65%] lg:w-[40%] portrait:w-[90%] h-[80%] lg:h-[65%] portrait:h-[40%]">
+                    <div className="py-[5px] lg:py-[10px] relative flex justify-center bg-baDarkBlue text-xl lg:text-4xl font-bold baFontColor drop-shadow-md items-center">
                         <div>
                             Notice
                         </div>
@@ -32,10 +32,10 @@ function PullOne({setProgress, generatePullList, pullList, onClick, setPyroxene}
                         </button>
                     </div>
 
-                    <div className="absolute top-[45%] w-full flex justify-center text-3xl text-gray-700">
+                    <div className="absolute top-[40%] lg:top-[45%] w-full flex justify-center text-base lg:text-3xl text-gray-700">
                         Proceed to recruit with 120 Pyroxenes?
                     </div>
-                    <div className="absolute bottom-[10%] h-[15%] flex justify-center w-full gap-[5%] text-4xl font-bold baFontColor">
+                    <div className="absolute bottom-[10%] h-[15%] flex justify-center w-full gap-[5%] text-xl lg:text-4xl font-bold baFontColor">
                         <button className="border border-black h-full w-[40%]" onClick={() => setPopup(false)}>
                             Cancel
                         </button>

@@ -22,8 +22,8 @@ function Recruitment({onClick, audioRef}) {
                     <RecruitmentMenu setPopup={setPopup}/>
                 </div>
                 <div className="absolute z-20 flex bottom-[2%] h-[8%] portrait:h-[4%] md:h-[4%] w-screen justify-between px-[30px]">
-                    <div>
-                        <button className="flex bg-gray-200 h-full rounded-md p-[5px] text-xs md:text-base font-bold text-gray-500 drop-shadow-lg items-center">
+                    <div className="-skew-x-6 bg-gray-200 rounded-md drop-shadow-lg">
+                        <button className="flex mx-1 skew-x-6 h-full p-[5px] text-s md:text-base font-bold text-gray-500 items-center">
                             Rate Info
                         </button>
                     </div>

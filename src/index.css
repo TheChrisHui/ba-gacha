@@ -36,22 +36,47 @@ code {
   background: rgb(181, 229, 245)
 }
 
-.characterAnimation {
-  animation-name: characterAnimation1, characterAnimation2;
-  animation-duration: 0.7s;
-  animation-delay: 0s, 0.7s;
-  animation-timing-function: ease-in, ease-out;
+
+.rectangleTransition {
+  background-color: rgb(241, 255, 246);
+  animation-name: rectangleAnimation;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
-@keyframes characterAnimation1 {
-  0%   {left:0vw; top:25vh; height:100vh}
-  100% {left:10vw; top:25vh; height:100vh}
+@keyframes rectangleAnimation {
+  0%   {transform: translate(15%, 15%) rotate(45deg)}
+  20%   {transform: translate(15%, 15%) rotate(45deg)}
+  100% {transform: translate(-75%, -75%) rotate(45deg)}
 }
 
-@keyframes characterAnimation2 {
-  0%   {left:10vw; top:0px; height:150vh}
-  100% {left:25vw; top:0px; height:150vh}
+.characterAnimation {
+  animation-name: characterAnimation;
+  animation-duration: 1.0s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes characterAnimation {
+  0% {transform: translateX(100px); height:70vh}
+  60% {transform: translateX(70px); height:70vh}
+  61% {transform: translateX(60px); height:120vh}
+  100% {transform: translateX(0px); height: 120vh}
+}
+
+.nameAnimation {
+  animation-name: nameAnimation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  background-color: rgb(52, 60, 94);
+  
+}
+
+@keyframes nameAnimation {
+  0% {transform: translateX(-105%) skewX(-6deg)}
+  70% {transform: translateX(-105%) skewX(-6deg)}
+  100% {transform: translateX(5%) skewX(-6deg)}
 }
 
 .fadeOutAnimation {
