@@ -23,10 +23,10 @@ function Gacha({pull, onClick, setPyroxene}) {
 
     useEffect(() => generatePullList(pull), [pull]);
 
-    const [progress, setProgress] = useState(1);
+    const [progress, setProgress] = useState(0);
 
     function handleVideoEnd() {
-        setProgress(0);
+        setProgress(1);
     }
 
     /**
