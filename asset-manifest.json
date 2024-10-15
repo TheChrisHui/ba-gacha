@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ba-gacha/static/css/main.03f9d79a.css",
-    "main.js": "/ba-gacha/static/js/main.a08e5e78.js",
+    "main.css": "/ba-gacha/static/css/main.80532dd5.css",
+    "main.js": "/ba-gacha/static/js/main.95b6bef9.js",
     "static/js/453.96822519.chunk.js": "/ba-gacha/static/js/453.96822519.chunk.js",
     "static/media/baMenuAnimation.mp4": "/ba-gacha/static/media/baMenuAnimation.00d11df06d357402c0a6.mp4",
     "static/media/connectedSky.mp3": "/ba-gacha/static/media/connectedSky.b28ad2e9bab75c447b50.mp3",
@@ -345,12 +345,12 @@
     "static/media/Marina_Icon.png": "/ba-gacha/static/media/Marina_Icon.3896b620c8d7b515628f.png",
     "static/media/Kikyou_Icon.png": "/ba-gacha/static/media/Kikyou_Icon.e3389a86eca0504ddb2a.png",
     "index.html": "/ba-gacha/index.html",
-    "main.03f9d79a.css.map": "/ba-gacha/static/css/main.03f9d79a.css.map",
-    "main.a08e5e78.js.map": "/ba-gacha/static/js/main.a08e5e78.js.map",
+    "main.80532dd5.css.map": "/ba-gacha/static/css/main.80532dd5.css.map",
+    "main.95b6bef9.js.map": "/ba-gacha/static/js/main.95b6bef9.js.map",
     "453.96822519.chunk.js.map": "/ba-gacha/static/js/453.96822519.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03f9d79a.css",
-    "static/js/main.a08e5e78.js"
+    "static/css/main.80532dd5.css",
+    "static/js/main.95b6bef9.js"
   ]
 }
