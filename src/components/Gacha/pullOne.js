@@ -11,7 +11,7 @@ function PullOne({setProgress, generatePullList, pullList, onClick, setPyroxene}
                 <div>
                     {(pullList.length !== 0) && <img className="mx-auto mt-[13%] w-[10%] h-auto" src={require(`../../media/baIcons/${pullList[0]}_Icon.png`)} alt="characterIcon"/>}
                 </div>
-                <div className="absolute bottom-[17%] h-[10%] flex justify-center w-full gap-[5%]">
+                <div className="absolute bottom-[17%] h-[10%] flex justify-center w-full gap-[5%] text-l lg:text-2xl font-bold baFontColor">
                     <button className="border border-black h-full w-[30%] lg:w-[15%]" onClick={() => onClick(0)}>
                         OK
                     </button>

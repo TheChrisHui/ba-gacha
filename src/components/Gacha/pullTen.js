@@ -17,7 +17,7 @@ function PullTen({setProgress, generatePullList, pullList, onClick, setPyroxene}
                         );
                     })}
                 </div>
-                <div className="absolute bottom-[17%] h-[10%] flex justify-center w-full gap-[5%]">
+                <div className="absolute bottom-[17%] h-[10%] flex justify-center w-full gap-[5%] text-l lg:text-2xl font-bold baFontColor">
                     <button className="border border-black h-full w-[30%] lg:w-[15%]" onClick={() => onClick(0)}>
                         OK
                     </button>
