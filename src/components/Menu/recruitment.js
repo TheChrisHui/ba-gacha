@@ -22,11 +22,6 @@ function Recruitment({onClick, audioRef}) {
                     <RecruitmentMenu setPopup={setPopup}/>
                 </div>
                 <div className="absolute z-20 flex bottom-[2%] h-[8%] portrait:h-[4%] md:h-[4%] w-screen justify-between px-[30px]">
-                    <div className="-skew-x-6 bg-gray-200 rounded-md drop-shadow-lg">
-                        <button className="flex mx-1 skew-x-6 h-full p-[5px] text-s md:text-base font-bold text-gray-500 items-center">
-                            Rate Info
-                        </button>
-                    </div>
                     <div className="flex justify-content items-center bg-gray-200 rounded-md p-[5px] drop-shadow-lg h-full w-[8vh] portrait:w-[4vh] md:w-[4vh]">
                         <button onClick={() => {
                             if (!audioRef.current.paused && audioRef.current.currentTime > 0) {
